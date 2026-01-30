@@ -22,19 +22,50 @@
 <b>hello</b> <i>world</i>!
 <a href="https://example.com">CS040</a> by <a href="https://example.com">Chisato Kamakura</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
+</body>
+</html>
 
-
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v24.0&appId=2356436984827408"></script>
-
-<div class="fb-like"
-     data-href="https://chisatokamakura.github.io/"
-     data-width=""
-     data-layout="standard"
-     data-action="like"
-     data-size="small"
-     data-share="true">
+<html>
+<head>
+  <style>
+    ul.menu{
+        list-style-type: none;
+        display: block;
+        overflow: hidden;
+    }
+    li.menu {
+        background-color: lightblue;
+        float: left;
+        margin: 10;
+        padding: 10;
+        display: block;
+    }
+    li.menu:hover {
+        background-color: lightpink;
+    }
+    li#selected{
+        background-color: lightblue;
+    }
+  </style>
+</head>
+<h1 style="color:red;">My Zoo Webpage</h1>
+<div>
+<u1 class="menu">
+    <a href="elephant.html"><li class="menu">elephant</li></a>
+    <li class="menu" id="selected">giraffe</li>
+    <li class="menu">tiger</li>
+    <li class="menu">lion</li>
+</u1>
 </div>
 
-</body>
+<!-- div: divider; divide web pages into chunks -->
+<div>
+<h3>Names of Giraffes</h3>
+<ul>
+    <li><a href="https://doesnotexist">Marty</a> the Giraffe</li>
+    <li>Steve</li>
+    <li>George</li>
+</ul>
+</div>
+<body>
 </html>
