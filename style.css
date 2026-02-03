@@ -17,3 +17,20 @@ table.predictions td {
 table.predictions th {
   background-color: #f3c6d3; /* light pink */
 }
+
+.navbar {
+  background-color: #f3c6d3; /* light pink */
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
