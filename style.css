@@ -1,3 +1,19 @@
 body {
-  background-color: #fff0f5; /* very light pink */
+  background-color: #fff0f5; 
+}
+
+table.predictions {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table.predictions th,
+table.predictions td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+table.predictions th {
+  background-color: #f3c6d3; /* light pink */
 }
