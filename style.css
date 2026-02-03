@@ -37,7 +37,3 @@ table.predictions th {
   text-decoration: underline;
 }
 
-.navbar a.active {
-  text-decoration: underline;
-  color: magenta;
-}
