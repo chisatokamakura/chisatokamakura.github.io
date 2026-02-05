@@ -1,16 +1,29 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Predictions and analysis for Olympic figure skating events, including men, women, pairs, and ice dance.">
-  <title>Olympic Figure Skating Predictions</title>
+
+  <meta name="description" content="My favorite men’s Olympic figure skaters, with highlights of their achievements and what makes their skating memorable.">
+
+  <title>Men’s Singles Favorites | Olympic Figure Skating</title>
+
   <link rel="stylesheet" href="style.css">
+
   <style>
+    .section {
+      border: 3px solid hotpink;
+      padding: 12px;
+      margin: 14px 0;
+      background: #fff7fb;
+      border-radius: 10px;
+    }
+
     .container {
       display: flex;
-      gap: 40px;              /* space between boxes */
+      gap: 40px;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 10px;
+      flex-wrap: wrap;
     }
 
     .card {
@@ -34,55 +47,90 @@
     .card:hover {
       background-color: rgba(255, 0, 0, 0.962);
     }
+
+    .highlight {
+      background: #ffe0ef;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
   </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSRJ6KMY5E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CSRJ6KMY5E');
+  </script>
 </head>
 
 <body>
 
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="men.html" >Men</a>
-  <a href="women.html">Women</a>
-  <a href="pairs.html">Pairs</a>
-  <a href="icedance.html">Ice Dance</a>
-</nav>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="men.html">Men</a>
+    <a href="women.html">Women</a>
+    <a href="pairs.html">Pairs</a>
+    <a href="icedance.html">Ice Dance</a>
+  </nav>
 
-<h1>My Favorite Olympic Figure Skaters: Men</h1>
+  <h1>My Favorite Olympic Figure Skaters: Men</h1>
 
-<div class="container">
+  <p>
+    Men’s singles is the discipline where you see the most difficult jump layouts and the most dramatic technical risk.
+    Skaters are always pushing the boundaries of the sport.
+  </p>
 
-  <div class="card">
-    <h3>Yuzuru Hanyu</h3>
-    <img src="hanyu.jpg" alt="Yuzuru Hanyu">
-    <ul>
-      <li>2x Olympic Champion</li>
-      <li>Is the "full package": jumps, spins, skating skills</li>
-      <li>The best triple axel in the history of the sport</li>
-      <li>Incredible comeback story in 2018 after foot injury</li>
-    </ul>
+  <p>
+    The skaters below are favorites of mine because they have the perfect combination of technical ability and artistry. They are, simply put, the
+    <span class="highlight">“full package.”</span>
+  </p>
+
+  <p>
+    Even though they all have different strengths and styles, each of them has left a lasting mark on the sport through consistency,
+    creativity, and technical prowess (and of course, amazing programs).
+  </p>
+
+  <div class="section">
+    <h2>Men’s Singles Legends</h2>
+
+    <div class="container">
+
+      <div class="card">
+        <h3>Yuzuru Hanyu</h3>
+        <img src="hanyu.jpg" alt="Yuzuru Hanyu skating in competition">
+        <ul>
+          <li>2× Olympic Champion</li>
+          <li>Known as the “full package”: jumps, spins, and skating skills</li>
+          <li>One of the best triple axels in the sport</li>
+          <li>Iconic comeback story in 2018 after injury</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Shoma Uno</h3>
+        <img src="shoma.jpg" alt="Shoma Uno performing a program">
+        <ul>
+          <li>3× Olympic Medallist</li>
+          <li>Technical and artistic powerhouse</li>
+          <li>Fantastic costumes and music choices</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Javier Fernández</h3>
+        <img src="javi.jpeg" alt="Javier Fernández smiling after a performance">
+        <ul>
+          <li>First Spaniard to win an Olympic figure skating medal</li>
+          <li>Strong jumps and charismatic performer</li>
+          <li>European skating legend</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
-
-  <div class="card">
-    <h3>Shoma Uno</h3>
-    <img src="shoma.jpg" alt="Shoma Uno">
-    <ul>
-      <li>3x Olympic Medallist</li>
-      <li>Technical and artistic powerhouse</li>
-      <li>Fantastic costumes and music choices</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Javier Fernández</h3>
-    <img src="javi.jpeg" alt="Javier Fernández">
-    <ul>
-      <li>1st Spaniard to win an Olympic figure skating medal</li>
-      <li>Strong jumps and charismatic performer</li>
-      <li>European legend</li>
-    </ul>
-  </div>
-
-</div>
 
 </body>
 </html>
