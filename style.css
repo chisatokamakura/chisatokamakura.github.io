@@ -1,5 +1,5 @@
 body {
-  background-color: #fff0f5; 
+  background-color: #fff0f5;
 }
 
 table.predictions {
@@ -15,14 +15,14 @@ table.predictions td {
 }
 
 table.predictions th {
-  background-color: #f3c6d3; /* light pink */
+  background-color: #f3c6d3;
 }
 
 .navbar {
-  background-color: #f3c6d3;      /* light pink */
+  background-color: #f3c6d3;
   padding: 12px;
   text-align: center;
-  border-bottom: 3px solid #c05a7a;  /* dark pink line */
+  border-bottom: 3px solid #c05a7a;
 }
 
 .navbar a {
@@ -37,3 +37,21 @@ table.predictions th {
   text-decoration: underline;
 }
 
+#selected {
+  text-decoration: underline;
+  color: #c05a7a;
+}
+
+
+@media (max-width: 600px) {
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  table.predictions th,
+  table.predictions td {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
