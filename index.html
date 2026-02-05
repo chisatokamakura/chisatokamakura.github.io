@@ -2,128 +2,203 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Predictions and analysis for Olympic figure skating events, including men, women, pairs, and ice dance.">
+
+  <meta name="description"
+        content="Predictions and analysis for Olympic figure skating events, including men, women, pairs, and ice dance.">
+
   <title>Olympic Figure Skating Predictions</title>
+
+  <!-- Optional: Open Graph (link preview) -->
+  <meta property="og:url" content="https://chisatokamakura.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Olympic Figure Skating Predictions" />
+  <meta property="og:description" content="My favorite skaters and predictions for the 2026 Olympics." />
+  <meta property="og:image" content="milanmascot.png" />
 
   <link rel="stylesheet" href="style.css">
 
   <style>
-    ul.menu {
-        list-style-type: none;
-        display: block;
-        overflow: hidden;
+    /* Existing menu styles (fine to keep even if not used yet) */
+    ul.menu{
+      list-style-type: none;
+      display: block;
+      overflow: hidden;
+      padding-left: 0;
     }
     li.menu {
-        background-color: lightblue;
-        float: left;
-        margin: 10px;
-        padding: 10px;
-        display: block;
+      background-color: lightblue;
+      float: left;
+      margin: 10px;
+      padding: 10px;
+      display: block;
     }
     li.menu:hover {
-        background-color: lightpink;
+      background-color: lightpink;
     }
-    li#selected {
-        background-color: lightblue;
+    li#selected{
+      background-color: lightblue;
     }
+
     img {
       width: 100%;
       max-width: 250px;
       height: auto;
       margin-bottom: 10px;
     }
+
+    /* ✅ Requirement: at least 3 DIVs styled using CSS */
+    .section {
+      border: 3px solid hotpink;
+      padding: 12px;
+      margin: 14px 0;
+      background: #fff7fb;
+      border-radius: 10px;
+    }
+
+    /* ✅ Requirement: at least 1 SPAN styled using CSS */
+    .highlight {
+      background: #ffe0ef;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* Optional table styling */
+    table.predictions {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+    }
+    table.predictions th, table.predictions td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: left;
+    }
   </style>
+
+  <!-- ✅ Requirement: Google Analytics tracker using <script> tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSRJ6KMY5E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CSRJ6KMY5E');
+  </script>
 </head>
 
 <body>
 
-<h1 style="color:black;">My Favorite Olympic Figure Skaters</h1>
+  <h1 style="color:black;">My Favorite Olympic Figure Skaters</h1>
 
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="men.html">Men</a>
-  <a href="women.html">Women</a>
-  <a href="pairs.html">Pairs</a>
-  <a href="icedance.html">Ice Dance</a>
-</nav>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="men.html">Men</a>
+    <a href="women.html">Women</a>
+    <a href="pairs.html">Pairs</a>
+    <a href="icedance.html">Ice Dance</a>
+  </nav>
 
-<div>
-<h3>What I'm Looking Forward to in the 2026 Olympics!</h3>
-<ol>
-    <li><a href="https://www.usatoday.com/story/sports/olympics/2026/01/10/us-womens-figure-skating-olympic-team-amber-glenn-alysa-liu-isabeau-levito/88112165007/">The Women's</a> field is deeper than it has ever been. It's anyone's to win!</li>
-    <li><a href="https://www.usatoday.com/story/entertainment/tv/2026/02/02/netflix-glitter-gold-ice-dancing-cast/88451167007/">Ice dance:</a> the dominant team of the quad, Madison Chock and Evan Bates, are the favorites. But former Olympic champion Guillame Cizeron just returned this season with a new partner. Who will take the crown?</li>
-    <li><a href="https://www.ellecanada.com/sport/canadian-figure-skater-deanna-stellato-dudek-2026-winter-olympics">Deanna Stellato-Dudek:</a> at 42, is the oldest person currently competing and is on a remarkable comeback journey after 16 years away from the sport.</li>
-    <li><a href="https://www.theatlantic.com/magazine/2026/03/ilia-malinin-olympic-figure-skating/685766/">Ilia Malinin:</a> the first skater to ever land a quad axel in history. Will he land it at the Olympics and take home the gold?</li>
-</ol>
-</div>
+  <!-- ✅ Requirement: at least three paragraphs using <p> -->
+  <p>
+    I made this website to share my excitement for the <span class="highlight">2026 Winter Olympics</span>
+    and to keep track of my favorite skaters across each discipline.
+  </p>
 
-<div>
-  <h3>2026 Olympic Mascots Tina and Milo!</h3>
-  <img src="milanmascot.png" alt="2026 Olympic Mascots">
-</div>
+  <p>
+    I’m especially interested in how different athletes peak at the right time—some dominate early in the season,
+    while others build momentum heading into the biggest competitions.
+  </p>
 
-<div>
-   <h3>My 2026 Olympic Winner Predictions:</h3>
-  <table class="predictions">
-  <tr>
-    <th>Category</th>
-    <th>Predicted Winner</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Men</td>
-    <td>Ilia Malinin</td>
-    <td>United States</td>
-  </tr>
-  <tr>
-    <td>Women</td>
-    <td>Kaori Sakamoto</td>
-    <td>Japan</td>
-  </tr>
-  <tr>
-    <td>Pairs</td>
-    <td>Miura / Kihara</td>
-    <td>Japan</td>
-  </tr>
-  <tr>
-    <td>Ice Dance</td>
-    <td>Chock / Bates</td>
-    <td>United States</td>
-  </tr>
-</table>
-**If I am proven correct I will scream with joy and buy everyone donuts**
-</div>
+  <p>
+    Below are a few storylines I’m watching, plus my personal winner predictions.
+    (If I’m right, I will absolutely buy donuts.)
+  </p>
 
-<body>
-</html>
+  <!-- ✅ Styled div #1 -->
+  <div class="section">
+    <h3>What I'm Looking Forward to in the 2026 Olympics!</h3>
+    <ol>
+      <li>
+        <a href="https://www.usatoday.com/story/sports/olympics/2026/01/10/us-womens-figure-skating-olympic-team-amber-glenn-alysa-liu-isabeau-levito/88112165007/" target="_blank" rel="noopener">
+          The Women's
+        </a>
+        field is deeper than it has ever been. It's anyone's to win!
+      </li>
 
-<br>
-<br>
-<br>
+      <li>
+        <a href="https://www.usatoday.com/story/entertainment/tv/2026/02/02/netflix-glitter-gold-ice-dancing-cast/88451167007/" target="_blank" rel="noopener">
+          Ice dance:
+        </a>
+        Madison Chock and Evan Bates are the favorites, but Guillame Cizeron just returned with a new partner.
+        Who will take the crown?
+      </li>
 
-<html>
-<head>
-  <title>CS040 Lab 0</title>
-    <!-- You can use open graph tags to customize link previews.
-    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="https://chisatokamakura.github.io/" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="CS040 Lab 0" />
-  <meta property="og:description"   content="This is my CS040 Lab 0" />
-  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CSRJ6KMY5E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <li>
+        <a href="https://www.ellecanada.com/sport/canadian-figure-skater-deanna-stellato-dudek-2026-winter-olympics" target="_blank" rel="noopener">
+          Deanna Stellato-Dudek:
+        </a>
+        at 42, is the oldest person currently competing and is on a remarkable comeback journey.
+      </li>
 
-  gtag('config', 'G-CSRJ6KMY5E');
-</script>
-<body>
-<b>hello</b> <i>world</i>!
-<a href="https://example.com">CS040</a> by <a href="https://example.com">Chisato Kamakura</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+      <li>
+        <a href="https://www.theatlantic.com/magazine/2026/03/ilia-malinin-olympic-figure-skating/685766/" target="_blank" rel="noopener">
+          Ilia Malinin:
+        </a>
+        the first skater to ever land a quad axel in history. Will he land it at the Olympics and take home the gold?
+      </li>
+    </ol>
+  </div>
+
+  <!-- ✅ Styled div #2 -->
+  <div class="section">
+    <h3>2026 Olympic Mascots Tina and Milo!</h3>
+    <img src="milanmascot.png" alt="2026 Olympic Mascots Tina and Milo">
+  </div>
+
+  <!-- ✅ Styled div #3 -->
+  <div class="section">
+    <h3>My 2026 Olympic Winner Predictions:</h3>
+
+    <table class="predictions">
+      <tr>
+        <th>Category</th>
+        <th>Predicted Winner</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Men</td>
+        <td>Ilia Malinin</td>
+        <td>United States</td>
+      </tr>
+      <tr>
+        <td>Women</td>
+        <td>Kaori Sakamoto</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>Pairs</td>
+        <td>Miura / Kihara</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>Ice Dance</td>
+        <td>Chock / Bates</td>
+        <td>United States</td>
+      </tr>
+    </table>
+
+    <p><span class="highlight">If I am proven correct</span> I will scream with joy and buy everyone donuts.</p>
+  </div>
+
+  <!-- Optional footer (you can keep your CC0 line if you want it) -->
+  <p>
+    <b>hello</b> <i>world</i>!
+    <a href="https://example.com">CS040</a> by
+    <a href="https://example.com">Chisato Kamakura</a> is marked
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left:.2em;">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em;max-height:1em;margin-left:.2em;">
+  </p>
 
 </body>
 </html>
